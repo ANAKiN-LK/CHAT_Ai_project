@@ -208,7 +208,7 @@ Where can I find the reimbursement policy?
 
 ## License
 
-This project is intended for educational and research purposes.
+This project is intended for educational  purposes.
 
 ---
 
