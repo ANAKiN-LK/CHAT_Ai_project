@@ -1,0 +1,10 @@
+[project]
+name = "officemate-frontend"
+version = "0.1.0"
+description = "OfficeMate AI Frontend Service"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "chainlit>=2.9.6",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.1",
+]
