@@ -1,7 +1,6 @@
 networks:
   officemate-network:
     driver: bridge
-
 services:
   # ----------------------------------------
   # Service 1: vLLM (Qwen 2.5)
@@ -38,7 +37,6 @@ services:
               capabilities: [gpu]
     networks:
       - officemate-network
-
   # ----------------------------------------
   # Service 2: Embeddings (BGE-M3)
   # ----------------------------------------
