@@ -25,6 +25,7 @@ services:
       - "8001:8000"
     command: >
       --model Qwen/Qwen2.5-14B-Instruct-AWQ
+      --api-key ${VLLM_API_KEY}
       --gpu-memory-utilization 0.85
       --max-model-len 8192
       --dtype auto
@@ -52,7 +53,7 @@ services:
     ports:
       - "8081:80"
     command: >
-      --model-id BAAI/bge-m3
+      --model-id intfloat/multilingual-e5-large-instruct
       --auto-truncate
       --max-client-batch-size 64
     deploy:

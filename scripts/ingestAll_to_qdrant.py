@@ -14,7 +14,7 @@ from langchain_community.document_loaders import (
 )
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_huggingface import HuggingFaceEndpointEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 from qdrant_client.http import models
@@ -23,10 +23,10 @@ SUPPORTED_EXTENSIONS = [".pdf", ".csv", ".txt", ".docx"]
 
 load_dotenv()
 
-EMBEDDING_URL = os.getenv("EMBEDDING_URL", "http://localhost:8081")
+EMBEDDING_URL = os.getenv("EMBEDDING_URL", "http://143.198.34.29:8081")
 EMBEDDING_API_KEY = os.getenv("EMBEDDING_API_KEY", "dummy_token")
-QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
-QDRANT_API_KEY = os.getenv("QDRANT_API_KEY", "")
+QDRANT_URL = os.getenv("QDRANT_URL", "http://143.198.34.29:6333")
+QDRANT_API_KEY = os.getenv("QDRANT_API_KEY", "ca0a9feebc24ee1915d7bc1b585627efb9bb30ffebfd34ea8a352522d250614b")
 COLLECTION_NAME = os.getenv("QDRANT_COLLECTION", "Chat-AI")
 
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -118,11 +118,11 @@ def ingest_documents():
     chunks = text_splitter.split_documents(all_docs)
     print(f"  ได้ทั้งหมด: {len(chunks)} chunks")
  
-    embeddings = HuggingFaceEndpointEmbeddings(
-        model=EMBEDDING_URL,
-        huggingfacehub_api_token=EMBEDDING_API_KEY
-    )
-  
+    embeddings = OpenAIEmbeddings(
+        model="intfloat/multilingual-e5-large-instruct",
+        base_url=f"{EMBEDDING_URL}/v1",
+        api_key=EMBEDDING_API_KEY,
+)
     client = QdrantClient(
         url=QDRANT_URL,
         api_key=QDRANT_API_KEY if QDRANT_API_KEY else None
