@@ -158,7 +158,7 @@ docker compose up --build
 Ingest your documents.
 
 ```bash
-uv run python scripts/ingestAll_to_qdrant.py
+uv run python scripts/ingest_all.py
 ```
 
 ### Step 3
