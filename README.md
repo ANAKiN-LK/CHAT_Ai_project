@@ -31,11 +31,11 @@ The architecture is designed to be modular, making it suitable for experimentati
 
 ## System Architecture
 
-```
+
 <p align="center">
   <img src="System Architecture.jpg" width="900">
 </p>
-```
+
 
 ---
 
