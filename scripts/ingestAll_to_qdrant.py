@@ -23,9 +23,9 @@ SUPPORTED_EXTENSIONS = [".pdf", ".csv", ".txt", ".docx"]
 
 load_dotenv()
 
-EMBEDDING_URL = os.getenv("EMBEDDING_URL", "http://143.198.34.29:8081")
+EMBEDDING_URL = os.getenv("EMBEDDING_URL", "http://localhost:8081")
 EMBEDDING_API_KEY = os.getenv("EMBEDDING_API_KEY", "dummy_token")
-QDRANT_URL = os.getenv("QDRANT_URL", "http://143.198.34.29:6333")
+QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY", "ca0a9feebc24ee1915d7bc1b585627efb9bb30ffebfd34ea8a352522d250614b")
 COLLECTION_NAME = os.getenv("QDRANT_COLLECTION", "Chat-AI")
 

@@ -9,14 +9,14 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
    
-    VLLM_BASE_URL: str = "http://143.198.34.29:8001/v1"
+    VLLM_BASE_URL: str = "http://localhost:8001/v1"
     VLLM_API_KEY: str = "EMPTY"
     VLLM_MODEL_NAME: str = "Qwen/Qwen2.5-14B-Instruct-AWQ"
 
-    EMBEDDING_URL: str = "http://143.198.34.29:8081"
+    EMBEDDING_URL: str = "http://localhost:8081"
     EMBEDDING_API_KEY: str = "dummy_token"
     
-    QDRANT_URL: str = "http://143.198.34.29:6333"
+    QDRANT_URL: str = "http://localhost:6333"
     QDRANT_API_KEY: str = "ca0a9feebc24ee1915d7bc1b585627efb9bb30ffebfd34ea8a352522d250614b"
     QDRANT_COLLECTION: str = "Chat-AI"
     
