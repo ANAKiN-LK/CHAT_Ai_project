@@ -160,12 +160,6 @@ Ingest your documents.
 ```bash
 uv run python scripts/ingestAll_to_qdrant.py
 ```
-
-<<<<<<< HEAD
----
-=======
-
->>>>>>> 93dbb562aac1236fbfb5c1916ff03b1dc99e159c
 ## Example Questions
 ```
 What is the company's sick leave policy?
