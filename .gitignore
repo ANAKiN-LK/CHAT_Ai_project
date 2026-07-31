@@ -24,3 +24,5 @@ env/
 # UV
 .uv/
 uv.lock
+
+System Architecture
