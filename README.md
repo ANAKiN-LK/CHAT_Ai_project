@@ -116,7 +116,7 @@ The architecture is designed to be modular, making it suitable for experimentati
 Clone the repository.
 
 ```bash
-git clone https://github.com/yourusername/your-project.git
+git clone https://github.com/ANAKiN-LK/CHAT_Ai_project.git
 
 cd your-project
 ```
