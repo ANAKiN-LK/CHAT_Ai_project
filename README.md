@@ -161,7 +161,11 @@ Ingest your documents.
 uv run python scripts/ingestAll_to_qdrant.py
 ```
 
+<<<<<<< HEAD
 ---
+=======
+
+>>>>>>> 93dbb562aac1236fbfb5c1916ff03b1dc99e159c
 ## Example Questions
 ```
 What is the company's sick leave policy?
@@ -191,10 +195,6 @@ Where can I find the reimbursement policy?
 This project is intended for educational  purposes.
 
 ---
-
-## Demo Clip
-https://youtu.be/mh0Kb04oW8Q?si=6Ea8mQ-EW5KsK9KF
-s
 
 
 ## Author
