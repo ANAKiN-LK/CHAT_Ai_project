@@ -161,27 +161,7 @@ Ingest your documents.
 uv run python scripts/ingestAll_to_qdrant.py
 ```
 
-### Step 3
 
-Run the backend.
-
-```bash
-cd backend
-
-uv run uvicorn app.main:app --reload
-```
-
-### Step 4
-
-Run the frontend.
-
-```bash
-cd frontend
-
-uv run chainlit run app.py
-```
-
----
 ## Example Questions
 ```
 What is the company's sick leave policy?
