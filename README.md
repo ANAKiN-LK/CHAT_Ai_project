@@ -32,23 +32,9 @@ The architecture is designed to be modular, making it suitable for experimentati
 ## System Architecture
 
 ```
-                User
-                  │
-                  ▼
-          Chainlit Frontend
-                  │
-                  ▼
-            FastAPI Backend
-                  │
-          LangGraph Workflow
-          ┌────────┴────────┐
-          │                 │
-          ▼                 ▼
-     Qdrant Search      vLLM Server
-          │                 │
-          └────────┬────────┘
-                   ▼
-              Final Response
+<p align="center">
+  <img src="System Architecture.jpg" width="900">
+</p>
 ```
 
 ---
